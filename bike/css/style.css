@@ -128,6 +128,14 @@ Bicycle
   justify-content: space-between;
 } */
 
-aside-container li {
+#bicycle ul li {
   width: 32%;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: center;
 }
