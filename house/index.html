@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHOTO BOOK preview</title>
-    <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/favicon.ico"  > <!--タブに表示するアイコン-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
   <div class="container">
-    <!-- ヘッダー -->
-    <header id="header" >
-      <a href="#"><p class="site-title"><img src="images/logo.svg" alt="ヘッダーのロゴ" class="title"></p>
-        </a>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="#"><img src="images/logo.svg" alt="PHOTO BOOK"></a>
+      </h1>
     </header>
-    <!-- メイン -->
+
     <main>
-      <div id="mainvisual" >
-        <div class="logo">
-          <img src="images/mainvisual.jpg" alt="" class="mainvisual_photo">
-        </div>
+      <div id="mainvisual">
+        <img src="images/mainvisual.jpg" alt="メインビジュアル">
       </div>
-      <section id="index" >
-        <div class="wrapper">
-          <h2 class="index_title">INDEX</h2>
-          <ol>
+
+      <section id="index">
+        <div class="inner">
+          <h2 class="section-title">INDEX</h2>
+          <ol class="index-list">
             <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
             <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
             <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
@@ -35,44 +35,33 @@
       </section>
 
       <section id="detail">
-        <div class="wrapper">
-          <div class="detail_inner">
-            <div class="detail_photo">
-              <h2>DETAIL</h2>
-              <img src="images/detail.jpg" alt="detailの写真" class="detail_photo">
-            </div>
-
-            <div class="detal_text">
-              <h2 class="detail_title">タイトルタイトルタイトル</h2>
-
-              <table>
-                <tr>
-                  <td>著者</td>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-
-                <tr>
-                  <td>出版社</td>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-                <tr>
-                  <td>発行年</td>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-              </table>
-
-              <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-              <a href="#">オンラインストアで見る</a>
-
+        <div class="inner">
+          <h2 class="section-title">DETAIL</h2>
+          <div class="content">
+            <img class="img" src="images/detail.jpg" alt="detailの写真">
+            <div class="text">
+              <p class="title">タイトルタイトルタイトル</p>
+              <dl>
+                <dt>著者</dt>
+                <dd>タイトルタイトルタイトル</dd>
+                <dt>出版社</dt>
+                <dd>タイトルタイトルタイトル</dd>
+                <dt>発行年</dt>
+                <dd>タイトルタイトルタイトル</dd>
+              </dl>
+              <p>
+                テキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <a class="link" href="#">オンラインストアで見る</a>
             </div>
           </div>
-
         </div>
       </section>
     </main>
-    <!-- フッター -->
-    <footer>
 
+    <footer id="footer">
+      <p class="inner">&copy; 2026 PHOTO BOOK</p>
     </footer>
   </div>
 </body>

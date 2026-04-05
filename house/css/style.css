@@ -5,11 +5,14 @@ html {
 }
 
 body {
-  background-color: #CCFFFF;
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
 }
 
 img {
   max-width: 100%;
+  vertical-align: bottom;
 }
 
 .container {
@@ -17,68 +20,129 @@ img {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 1.125rem;
-  font-weight: bold;
-
-}
-
-.wrapper {
+.inner {
   max-width: 600px;
   margin: 0 auto;
 }
 
+.section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 /* ヘッダー */
+#header {
+  margin-top: 60px;
+}
 
 #header .site-title {
   width: 160px;
   line-height: 1px;
-  margin-bottom: 15px ;
-  margin-top: 60px;
+  margin-bottom: 15px;
 }
-.site-title a {
+
+#header .site-title a {
   display: block;
 }
 
-/* mainvisual */
+/* Mainvisual */
 #mainvisual {
   margin-bottom: 60px;
 }
 
-/* index */
+/* Index */
 #index {
-  background-color: white;
+  background-color: #fff;
   padding: 30px 0;
   margin-bottom: 60px;
 }
 
-#index ol {
+#index .index-list {
   margin-left: 20px;
 }
-#index li {
+
+#index .index-list li {
   margin-bottom: 20px;
 }
 
-#index li li:last-child {
+#index .index-list li:last-child {
   margin-bottom: 0;
 }
 
-/* DETAIL */
+/* Detail */
 #detail {
   margin-bottom: 100px;
 }
 
-.detail_inner {
+#detail .content {
   display: flex;
   align-items: flex-start;
 }
 
-.detail_photo h2 {
-  font-size: 1.125rem;
-  font-weight: bold
+#detail .content .img {
+  width: 270px;
+  margin-right: 60px;
 }
 
-.detail_photo img {
-    width: 270px;
-  margin-right: 60px;
+#detail .content .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#detail .content dl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+}
+
+#detail .content dt {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+#detail .content dd {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+#detail .content .text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#detail .content .link {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Footer */
+#footer {
+  font-size: 0.625rem;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* レスポンシブ (タブレット・スマホ) */
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+
+  #header, #mainvisual {
+    padding: 0 10px;
+  }
+
+  #detail .content {
+    flex-direction: column;
+  }
+
+  #detail .content .img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 }
