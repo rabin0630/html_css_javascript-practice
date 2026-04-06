@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 全体のリセット */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ナビゲーション全体の背景と配置 */
+    .navbar {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      /* 親要素の高さ制限をなくし、中身に合わせる */
+    }
+
+    /* リスト部分（白背景） */
+    .navbar-nav {
+      background-color: aliceblue;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-left: 10px;
+    }
+
+    /* リストアイテム（青背景） */
+    .nav-item {
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* アイコンボタン（リンク） */
+    .icon-button {
+      /* aタグ自体をflexにして中央寄せを確定させる */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem; 
+      color: white;
+      text-decoration: none;
+      /* フォントサイズを調整するとより真ん中に見えやすくなる */
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a href="#" class="icon-button">
+          ☺️
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="icon-button">
+          ☺️
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="icon-button">
+          ☺️
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+</body>
+</html>
