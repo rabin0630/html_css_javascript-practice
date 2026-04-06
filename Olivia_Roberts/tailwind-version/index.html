@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header id="header" class="fixed w-full top-0 left-0 px-[15%] py-[4rem] bg-second-bg-color backdrop-blur-[10px] flex justify-between items-center z-[100]">
+    <a class="text-[3rem] text-white font-[800] cursor-pointer transition-[0.3s_ease] hover:scale-[1.1]" href="index.html">
+      Olivia <span class="text-main-color">Roberts</span>
+    </a>
+
+    <i class="bx bx-menu text-main-color text-[3.6rem] hidden" id="menu-icon"></i>
+
+    <nav class="flex gap-[3rem]">
+      <a href="#home" class="text-[2rem] text-white font-[500] border-b-[3px] border-transparent transition-[0.3s_ease] hover:border-main-color hover:text-main-color">Home</a>
+      <a href="#about" class="text-[2rem] text-white font-[500] border-b-[3px] border-transparent transition-[0.3s_ease] hover:border-main-color hover:text-main-color">About</a>
+      <a href="#service" class="text-[2rem] text-white font-[500] border-b-[3px] border-transparent transition-[0.3s_ease] hover:border-main-color hover:text-main-color">Services</a>
+      <a href="#contact" class="text-[2rem] text-white font-[500] border-b-[3px] border-transparent transition-[0.3s_ease] hover:border-main-color hover:text-main-color">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="min-h-[100vh] px-[15%] pt-[12rem] pb-[4rem] flex flex-row-reverse items-center justify-between gap-[8rem]">
+    
+    <img src="images/image.jpg" alt="women" class="w-[32vw] rounded-full shadow-[0_0_20px_2px_var(--color-main-color)]">
+
+    <div class="flex flex-col items-end gap-[1rem]">
+      <h1>HI, It's <span>Olivia</span></h1>
+      <h2>I'm a <span>Frontend Developer</span></h2>
+      <p>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト
+      </p>
+      
+      <div class="link-wrapper">
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-discord-alt"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="button-wrapper">
+        <button type="button">Hire</button>
+        <button type="button">Contact</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
