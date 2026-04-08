@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind-practice</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen flex-col">
+    <h1 class="text-2xl bg-amber-200 py-2 px-3 rounded-3xl border-amber-200">計算</h1>
+    <br>
+    <div class="flex items-center justify-center flex-col gap-3">
+      <h2 class="bg-blue-300  w-38 h-15 py-[3px] px-[10px] rounded-[10px] shadow-[1px_1px_2px_rgb(0_0_200/40%)] flex justify-center  items-center box-border">total</h2>
+      <div class="flex items-center justify-center gap-4">
+        <input autocomplete="off" id="number-1" type="number" placeholder="値1" class="bg-blue-100 w-32 h-10 text-center rounded-md border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input autocomplete="off" id="number-2" type="number" placeholder="値2" class="bg-blue-100 w-32 h-10 text-center rounded-md border border-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-400">
+      </div>
+      <button type="button" class="bg-red-400 text-white font-bold w-32 h-10 rounded-full cursor-pointer shadow-md transition-all duration-100 ease-in-out hover:bg-red-300 hover:shadow-lg hover:-translate-y-0.5 active:bg-red-500 active:shadow-none active:translate-y-0.5">
+        Plus
+      </button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

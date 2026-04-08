@@ -9,7 +9,6 @@ function App() {
       <NavItem icon={ <Plus/>} />
       <NavItem icon={ <Bell/>} />
       <NavItem icon={<Messenger/>} />
-
       <NavItem icon={<Caret/>}>
       <DropdownMenu/>
       </NavItem>
